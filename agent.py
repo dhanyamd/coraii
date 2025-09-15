@@ -1,6 +1,6 @@
-from corai import reasoning_model, max_iterations, temperature, print_boxed, print_boxed_execution_result, get_execution_summary, run_python
+from corai import reasoning_model, max_iterations, temperature,  together_client,  print_boxed, print_boxed_execution_result, get_execution_summary, run_python, collect_files, together_client
 from typing import Optional
-import re 
+import re, os
 class ReActDataScienceAgent:
     def __init__(
         self,
@@ -159,3 +159,5 @@ class ReActDataScienceAgent:
 
         print(f"⚠️ Maximum iterations ({self.max_iterations}) reached without completion")
         return "Task incomplete - maximum iterations reached"
+
+ 

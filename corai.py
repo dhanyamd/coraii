@@ -17,7 +17,7 @@ max_output_length = 500  # Maximum words in displayed output
 show_images = True      # Whether to display generated plots
 box_width = 80         # Width of output boxes
 
-together_client = Together(api_key="--your--together-api-key--")  # Replace with your API key
+together_client = Together(api_key="")  # Replace with your API key
 code_interpreter = together_client.code_interpreter 
 
 def run_python(code: str, session_id: Optional[str] = None, files: Optional[list[Dict[str, str]]] = None):
