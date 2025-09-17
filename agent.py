@@ -107,6 +107,7 @@ class ReActDataScienceAgent:
             action_input = "print('Error: Format not followed by the assistant')"
 
         return thought, action_input
+        
     def run(self, user_input: str):
         """Execute the main ReAct reasoning and acting loop"""
         self.history.append({"role": "user", "content": user_input})

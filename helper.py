@@ -58,12 +58,12 @@ def run_data_science_task(query: str, data_dir: Optional[str] = None) -> str:
 
 # Example 1: Simple iris dataset visualization
 query_1 = "Load the iris dataset and create a scatter plot of sepal length vs sepal width, colored by species"
-
+query_2 = "write a python code to print the iris dataset in a file called iris.py"
 print("=" * 80)
 print("🌸 EXAMPLE 1: Iris Dataset Visualization")
 print("=" * 80)
-print(f"Task: {query_1}")
+print(f"Task: {query_2}")
 print()
 
 # Run the agent
-result_1 = run_data_science_task(query_1)
+result_1 = run_data_science_task(query_2)
